@@ -1,0 +1,160 @@
+@import "reset";
+@import "variables";
+
+body {
+  background-color: $clr-gray-light;
+  font-family: $ff-primary;
+  font-size: $fz-text;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  &__wrapper {
+    max-width: 635px;
+    overflow: hidden;
+    margin: 70px 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+    @media (min-width: 768px) {
+      margin: 0;
+      border-radius: 8px;
+    }
+  }
+
+  &__row {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__col {
+    padding: 30px 25px;
+
+    @media (min-width: 768px) {
+      padding: 40px;
+    }
+
+    &--sm-half {
+      @media (min-width: 768px) {
+        flex: 1 0 50%;
+      }
+    }
+
+    &--primary {
+      background-color: #2bb3b1;
+    }
+
+    &--secondary {
+      background-color: $clr-cyan-light;
+    }
+  }
+}
+
+.price__title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  &--sm-alt {
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  &--primary {
+    color: $clr-cyan;
+  }
+}
+
+.price__subtitle {
+  margin-bottom: 15px;
+  color: $clr-yellow-bright;
+  font-size: 18px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.price__text {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.618em;
+
+  &--sm-normal {
+    @media (min-width: 768px) {
+      font-size: $fz-text;
+    }
+  }
+
+  &--lh-normal {
+    line-height: 1.4em;
+  }
+
+  &--greyish-blue {
+    color: $clr-grayish-blue;
+  }
+
+  &--grey {
+    color: $clr-gray-light;
+  }
+}
+
+.price__cost {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $clr-gray-light;
+  font-size: 18px;
+}
+
+.price__value {
+  margin-right: 8px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price__duration {
+  color: rgba($clr-gray-light, 0.6);
+  font-size: $fz-text;
+}
+
+.price__desc {
+  color: #fff;
+  font-size: 15px;
+}
+
+.price__btn {
+  padding: 10px;
+  margin-top: 25px;
+  border: 0;
+  border-radius: 4px;
+  background: $clr-yellow-bright;
+  color: #fff;
+  font-family: $ff-primary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.618em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price__wrapper {
+  max-width: 635px;
+  overflow: hidden;
+  margin: 70px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+  .price__wrapper {
+    margin: 0;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.price__col {
+  padding: 30px 25px;
+}
+
+@media (min-width: 768px) {
+  .price__col {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price__col--sm-half {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+.price__col--primary {
+  background-color: #2bb3b1;
+}
+
+.price__col--secondary {
+  background-color: #4abebd;
+}
+
+.price__title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .price__title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price__title--sm-alt {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+.price__title--primary {
+  color: #2ab2af;
+}
+
+.price__subtitle {
+  margin-bottom: 15px;
+  color: #c0df34;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .price__subtitle {
+    margin-bottom: 10px;
+  }
+}
+
+.price__text {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.618em;
+}
+
+@media (min-width: 768px) {
+  .price__text--sm-normal {
+    font-size: 16px;
+  }
+}
+
+.price__text--lh-normal {
+  line-height: 1.4em;
+}
+
+.price__text--greyish-blue {
+  color: #98a6bd;
+}
+
+.price__text--grey {
+  color: #e5eff5;
+}
+
+.price__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  color: #e5eff5;
+  font-size: 18px;
+}
+
+.price__value {
+  margin-right: 8px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price__duration {
+  color: rgba(229, 239, 245, 0.6);
+  font-size: 16px;
+}
+
+.price__desc {
+  color: #fff;
+  font-size: 15px;
+}
+
+.price__btn {
+  padding: 10px;
+  margin-top: 25px;
+  border: 0;
+  border-radius: 4px;
+  background: #c0df34;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.618em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 768px) {
+  .price__btn {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
